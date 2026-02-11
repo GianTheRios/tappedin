@@ -99,7 +99,7 @@ function Problem() {
         </div>
 
         <h3 className="font-display text-3xl md:text-4xl font-bold mb-12 max-w-2xl">
-          Hiring is broken. Resumes lie. LinkedIn is performance theatre.
+          Hiring is broken. Resumes lie. Companies fake hiring. LinkedIn is performance theatre.
         </h3>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
