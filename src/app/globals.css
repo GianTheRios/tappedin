@@ -1,0 +1,108 @@
+@import "tailwindcss";
+@import "@fontsource/space-grotesk/400.css";
+@import "@fontsource/space-grotesk/500.css";
+@import "@fontsource/space-grotesk/700.css";
+@import "@fontsource/jetbrains-mono/400.css";
+@import "@fontsource/jetbrains-mono/500.css";
+
+@theme {
+  /* Foundation — bright, warm, open */
+  --color-canvas: #FAFAF7;
+  --color-surface: #FFFFFF;
+  --color-surface-raised: #F5F5F0;
+  --color-surface-overlay: #EEEEEA;
+
+  /* Borders — thick, black, unapologetic */
+  --color-border: #1A1A1A;
+  --color-border-soft: #D4D4D0;
+
+  /* Orange — primary energy */
+  --color-orange: #F97316;
+  --color-orange-light: #FFF0E5;
+  --color-orange-fill: #FFEDD5;
+
+  /* Blue — secondary calm */
+  --color-blue: #3B82F6;
+  --color-blue-light: #EFF6FF;
+  --color-blue-fill: #DBEAFE;
+
+  /* Green — verified, success */
+  --color-green: #22C55E;
+  --color-green-light: #F0FDF4;
+  --color-green-fill: #DCFCE7;
+
+  /* Text — dark on light, high contrast */
+  --color-text-primary: #1A1A1A;
+  --color-text-secondary: #525252;
+  --color-text-tertiary: #8A8A8A;
+  --color-text-ghost: #B5B5B5;
+
+  /* Neo-brutalist shadows */
+  --shadow-brutal: 4px 4px 0 #1A1A1A;
+  --shadow-brutal-sm: 2px 2px 0 #1A1A1A;
+  --shadow-brutal-hover: 6px 6px 0 #1A1A1A;
+  --shadow-brutal-orange: 4px 4px 0 #F97316;
+
+  /* Typography */
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-body: "Space Grotesk", system-ui, sans-serif;
+}
+
+/* Base reset */
+* {
+  border-radius: 0 !important;
+}
+
+html {
+  background: var(--color-canvas);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--color-canvas);
+}
+
+/* Selection */
+::selection {
+  background: var(--color-orange);
+  color: white;
+}
+
+/* Monospace utility */
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Neo-brutalist shadow utilities */
+.shadow-brutal {
+  box-shadow: var(--shadow-brutal);
+}
+.shadow-brutal-sm {
+  box-shadow: var(--shadow-brutal-sm);
+}
+.shadow-brutal-hover {
+  box-shadow: var(--shadow-brutal-hover);
+}
+.shadow-brutal-orange {
+  box-shadow: var(--shadow-brutal-orange);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-canvas);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-soft);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-tertiary);
+}
