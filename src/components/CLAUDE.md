@@ -7,6 +7,7 @@
 
 | ID | Time | T | Title | Read |
 |----|------|---|-------|------|
+| #349 | 8:23 PM | ✅ | Fixed LinkedIn Card Layout with Flexbox | ~317 |
 | #339 | 6:23 PM | ✅ | Expanded Problem Statement with Company Hiring Critique | ~308 |
 | #316 | 5:06 PM | ✅ | Updated LinkedIn Characterization in Landing Page | ~292 |
 | #290 | 3:41 PM | 🟣 | TappedIn Proof Profile Component Implementation | ~1058 |

@@ -99,7 +99,7 @@ function Problem() {
         </div>
 
         <h3 className="font-display text-3xl md:text-4xl font-bold mb-12 max-w-2xl">
-          Hiring is broken. Resumes lie. Companies fake hiring. LinkedIn is performance theatre.
+          Hiring is broken. Resumes lie. Half the jobs posted aren&apos;t real. LinkedIn is performance theatre.
         </h3>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -107,7 +107,7 @@ function Problem() {
             <div key={i} className="flex flex-col gap-3">
               {/* LinkedIn side — mimics LinkedIn's corporate aesthetic */}
               <div
-                className="p-5 border border-[#E0E0E0]"
+                className="p-5 border border-[#E0E0E0] flex-1 flex flex-col"
                 style={{
                   background: "#F3F2EF",
                   borderRadius: "8px",
@@ -122,7 +122,7 @@ function Problem() {
                 <p className="text-[13px] text-[#666666] leading-relaxed font-sans">
                   {item.linkedin}
                 </p>
-                <div className="flex items-center gap-3 mt-3 pt-3 border-t border-[#E0E0E0]">
+                <div className="flex items-center gap-3 mt-auto pt-3 border-t border-[#E0E0E0]">
                   <span className="text-[12px]" title="Like">&#128077;</span>
                   <span className="text-[12px]" title="Celebrate">&#128079;</span>
                   <span className="text-[12px]" title="Insightful">&#128161;</span>
@@ -130,7 +130,7 @@ function Problem() {
                 </div>
               </div>
               {/* TappedIn side — our sharp neo-brutalist system */}
-              <div className="p-5 bg-surface border-2 border-border shadow-brutal">
+              <div className="p-5 bg-surface border-2 border-border shadow-brutal flex-1 flex flex-col">
                 <span className="font-mono text-[10px] tracking-[0.15em] uppercase text-orange font-bold block mb-2">
                   TappedIn
                 </span>
